@@ -2,6 +2,10 @@ header{
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
 }
 
 .left{
@@ -83,6 +87,10 @@ body{
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
 }
 .secondrow-right{
     display: flex;
@@ -120,4 +128,24 @@ body{
   img.imageElemClass {
     height: 160px;
     width: 254;
+}
+.oneRstrntCard {
+    border: 1px transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 257px;
+    padding: 18px;
+}
+div#main-retaurant-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+    padding: 20px 35px;
+}
+.oneRstrntCard:hover{
+    border: 1px solid gray;
+    box-shadow: 1px gray;
 }
