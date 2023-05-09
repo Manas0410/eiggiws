@@ -250,27 +250,35 @@ const foodItems = [
 ]
 
 const mainRstrnt = document.getElementById("main-retaurant-container");
-for(let i =o ;i<foodItems.length;i++){
+for(let i =0 ;i<foodItems.length;i++){
     const oneRstrntContainer = document.createElement("div");
     oneRstrntContainer.className = "oneRstrntCard";
 
     const imageElem = document.createElement("img");
+    imageElem.className = "imageElemClass"
     const restaurantElem = document.createElement("span");
-    const  foodTypesElem= document.createElement("span");
+    restaurantElem.className = "restaurantElemClass"
+    const foodTypesElem= document.createElement("span");
+    foodTypesElem.className = "foodTypesElemClass"
     const ratingElem = document.createElement("span");
+    ratingElem.className = "ratingElemClass"
     const deliveryTimeElem = document.createElement("span");
+    deliveryTimeElem.className="deliveryTimeElemClass";
     const priceElem = document.createElement("span");
+    priceElem.className = "priceElemClass"
     const foodRatingDeliveryTimePriceElem = document.createElement("div");
+    foodRatingDeliveryTimePriceElem.className = "foodRatingDeliveryTimePriceElemClass"
     const discountElem = document.createElement("span");
+    discountElem.className ="discountElemClass" 
     
 
-    imageElem =foodItems[i].image;
-    restaurantElem = foodItems[i].restaurant;
-    foodTypesElem = foodItems[i].foodTypes;
-    ratingElem = foodItems[i].foodRatingDeliveryTimePrice.rating;
-    deliveryTimeElem = foodItems[i].foodRatingDeliveryTimePrice.deliveryTime;
-    priceElem = foodItems[i].foodRatingDeliveryTimePrice.price;
-    discountElem = foodItems[i].discount;
+    imageElem.src =foodItems[i].image;
+    restaurantElem.textContent = foodItems[i].restaurant;
+    foodTypesElem.textContent = foodItems[i].foodTypes;
+    ratingElem.textContent = foodItems[i].foodRatingDeliveryTimePrice.rating;
+    deliveryTimeElem.textContent = foodItems[i].foodRatingDeliveryTimePrice.deliveryTime;
+    priceElem.textContent = foodItems[i].foodRatingDeliveryTimePrice.price;
+    discountElem.textContent = foodItems[i].discount;
     
     foodRatingDeliveryTimePriceElem.appendChild(ratingElem);
     foodRatingDeliveryTimePriceElem.appendChild(deliveryTimeElem);
