@@ -117,6 +117,7 @@ body{
     border: 1px solid rgba(166, 161, 161, 0.537);
   }
 
-  .oneRstrntCard{
-    
-  }
+  img.imageElemClass {
+    height: 160px;
+    width: 254;
+}
