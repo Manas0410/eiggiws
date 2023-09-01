@@ -235,18 +235,7 @@ const foodItems = [
         },
         discount: '35% OFF | Use YUMYUM'
     },
-    {
-        id: 21,
-        image: './assets/images/5.20.webp',
-        restaurant: 'Naturals',
-        foodTypes: 'Ice Creams, Desserts',
-        foodRatingDeliveryTimePrice: {
-            rating: '4.8 ☆ ',
-            deliveryTime: '45 MINS',
-            price: '₹150 FOR TWO'
-        },
-        discount: '35% OFF | Use NATURALS'
-    }
+   
 ]
 
 const mainRstrnt = document.getElementById("main-retaurant-container");
@@ -292,4 +281,144 @@ for(let i =0 ;i<foodItems.length;i++){
 
     
     mainRstrnt.appendChild(oneRstrntContainer);
+}
+
+
+const cities =
+    [
+        "Abohar",
+        "Adilabad",
+        "Adityapur",
+        "Adoni",
+        "Agartala",
+        "Agra",
+        "Ahmedabad",
+        "Ahmednagar",
+        "Aizawl",
+        "Ajmer",
+        "Akola",
+        "Alappuzha",
+        "Aligarh",
+        "Alipurduar",
+        "Allahabad",
+        "Almora",
+        "Alwar",
+        "Ambajogai",
+        "Ambala",
+        "Ambikapur",
+        "Ambur",
+        "Amravati",
+        "Amreli",
+        "Amritsar",
+        "Anand",
+        "Anantapur",
+        "Ankleshwar",
+        "Arakkonam",
+        "Arambagh",
+        "Araria",
+        "Arrah",
+        "Asansol",
+        "Aurangabad",
+        "Aurangabadbihar",
+        "Azamgarh",
+        "Baddi",
+        "Bagalkot",
+        "Bagdogra",
+        "Bahadurgarh",
+        "Bahraich",
+        "Balaghat",
+        "Balangir",
+        "Balasore",
+        "Ballari",
+        "Ballia",
+        "Balrampur",
+        "Balurghat",
+        "Banda",
+        "Bangalore",
+        "Bankura",
+        "Bantwal",
+        "Baramati",
+        "Baran",
+        "Bardhaman",
+        "Bardoli",
+        "Bareilly",
+        "Barh",
+        "Baripada",
+        "Barmer",
+        "Barnala",
+        "Barshi",
+        "Basirhat",
+        "Basti",
+        "Batala",
+        "Bathinda",
+        "Beawar",
+        "Beed",
+        "Begusarai",
+        "Bela - Pratapgarh",
+        "Belgaum",
+        "Berhampore",
+        "Berhampur",
+        "Bettiah",
+        "Betul",
+        "Bhadohi",
+        "Bhadrachalam",
+        "Bhadrak",
+        "Bhadravati",
+        "Bhagalpur",
+        "Bhandara",
+        "Bharabanki",
+        "Bharatpur",
+        "Bharuch",
+        "Bhatkal",
+        "Bhavnagar",
+        "Bhawanipatna",
+        "Bhilai",
+        "Bhilwara",
+        "Bhimavaram",
+        "Bhind",
+        "Bhiwadi",
+        "Bhiwani",
+        "Bhopal",
+        "Bhubaneswar",
+        "Bhuj",
+        "Bhusawal",
+        "Bidar",
+        "Biharsharif",
+        "Bijapur",
+        "Bijnor",
+        "Bikaner",
+        "Bilaspur",
+        "Bilimora",
+        "Biswanath - Chariali",
+        "Bodhan - Rural",
+        "Bodinayakanur",
+        "Boisar",
+        "Bokaro",
+        "Bolpur",
+        "Bongaigaon",
+        "Bongaon",
+        "Budaun",
+        "Budhwal",
+        "Bulandshahr",
+        "Buldana",
+        "Bundi",
+        "Burhanpur",
+        "Buxar",
+    ]
+
+
+const citiesDiv = document.getElementById('cities-div')
+
+for (let i = 0; i < cities.length; i++) {
+    const citiesLen = cities[i]
+
+    const uListCities = document.createElement('ul')
+    uListCities.className = 'cities-list'
+    const liCityNames = document.createElement('li')
+    liCityNames.className = 'li-city-names'
+    liCityNames.textContent = citiesLen
+
+
+    citiesDiv.appendChild(uListCities)
+    uListCities.appendChild(liCityNames)
 }

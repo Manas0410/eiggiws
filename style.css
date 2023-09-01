@@ -130,7 +130,7 @@ body{
     width: 254;
 }
 .oneRstrntCard {
-    border: 1px transparent;
+    border: 1px  solid transparent;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -146,6 +146,21 @@ div#main-retaurant-container {
     padding: 20px 35px;
 }
 .oneRstrntCard:hover{
-    border: 1px solid gray;
-    box-shadow: 1px gray;
+    border: 1px solid rgb(187, 183, 183);
+    box-shadow: 5px 5px 5px rgb(204, 202, 202);
+    
+}
+.cities-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+  }
+  div#cities-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+    background-color: #000;
+    color: white;
 }
